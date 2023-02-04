@@ -34,10 +34,11 @@ def create_data(application, db):
             db.session.commit()
 
 
+app = create_app(Config())
+
+CORS(app)
 cors = CORS(resources={
     r"/*": {"origins": '*'}
 })
 
-if __name__ == "__main__":
-    app = create_app(Config())
-    app.run(port=8000)
+app.run()

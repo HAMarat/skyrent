@@ -16,3 +16,6 @@ class PlaceService:
 
     def get_by_price(self, price_from, price_to):
         return self.dao.get_by_price(price_from, price_to)
+
+    def get_by_city_and_price(self, city, price_from, price_to):
+        return self.dao.get_by_city_and_price(city, price_from, price_to)
