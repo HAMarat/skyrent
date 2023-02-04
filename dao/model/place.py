@@ -1,5 +1,4 @@
 from marshmallow import Schema, fields
-from marshmallow.fields import Str
 
 from setup_db import db
 
