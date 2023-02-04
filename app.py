@@ -31,8 +31,3 @@ def create_data(application, db):
             place_data = Place(**place)
             db.session.add(place_data)
             db.session.commit()
-
-
-if __name__ == "__main__":
-    app = create_app(Config())
-    app.run(port=8000)
