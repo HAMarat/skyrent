@@ -41,4 +41,4 @@ cors = CORS(resources={
     r"/*": {"origins": '*'}
 })
 
-app.run()
+app.run(port=8000)
