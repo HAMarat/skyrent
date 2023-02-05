@@ -12,7 +12,11 @@ class PlaceView(Resource):
     def get(self):
         filter_city = request.args.get('city')
         price_from = request.args.get('from', 0)
+        if price_from == "":
+            price_from = 0
         price_to = request.args.get('to', 999999)
+        if price_to == "":
+            price_to = 999999
 
         if filter_city is not None and filter_city != '':
             return PlaceSchema(many=True).dump(place_service.get_by_city_and_price(filter_city, price_from, price_to))
