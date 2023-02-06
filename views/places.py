@@ -1,8 +1,8 @@
 from flask_restx import Resource, Namespace
 from flask import request
 
-from dao.model.place import PlaceSchema
-from implemented import place_service
+from backend.dao.model.place import PlaceSchema
+from backend.implemented import place_service
 
 place_ns = Namespace('places')
 

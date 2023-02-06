@@ -1,6 +1,6 @@
 from marshmallow import Schema, fields
 
-from setup_db import db
+from backend.setup_db import db
 
 
 class Place(db.Model):
