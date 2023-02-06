@@ -1,6 +1,6 @@
 from sqlalchemy import and_
 
-from backend.dao.model.place import Place
+from dao.model.place import Place
 
 
 class PlaceDAO:

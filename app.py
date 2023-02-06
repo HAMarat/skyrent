@@ -2,11 +2,11 @@ from flask import Flask
 from flask_restx import Api
 from flask_cors import CORS
 
-from backend.setup_db import db
-from backend.config import Config
-from backend.dao.model.place import Place
-from backend.views.places import place_ns
-from backend.utils import get_data_from_json
+from setup_db import db
+from config import Config
+from dao.model.place import Place
+from views.places import place_ns
+from utils import get_data_from_json
 
 
 def create_app(config_object):

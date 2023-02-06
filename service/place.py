@@ -1,4 +1,4 @@
-from backend.dao.place import PlaceDAO
+from dao.place import PlaceDAO
 
 
 class PlaceService:
